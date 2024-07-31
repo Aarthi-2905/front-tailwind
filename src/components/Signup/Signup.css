@@ -1,0 +1,139 @@
+/* General styling for the signup-wrapper */
+.signup-wrapper {
+    width: 125%;
+    max-width: 1200px;
+    background: #6FB3B8;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.3px);
+    -webkit-backdrop-filter: blur(4.3px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 30px 20px;
+    margin: 0 auto; /* Center align on the screen */
+    color: #121312;
+}
+
+.signup-wrapper h1 {
+    font-size: 28px;
+    text-align: center;
+    color: #388087;
+}
+
+.signup-wrapper .input-boxes {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+    background-color: #BADFE7;
+    border-radius: 50px;
+}
+
+.input-boxes input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgba(104, 103, 103, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #121312;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-boxes input::placeholder {
+    color: #060505;
+}
+
+.input-boxes .icon, .input-boxes .toggle-password {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: rgb(132, 132, 132);
+    cursor: pointer;
+}
+
+.signup-wrapper button {
+    width: 100%;
+    height: 45px;
+    background: #388087;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    transition:0.4s;
+}
+
+.signup-wrapper button:hover {
+    background-color: #C2EDCE;
+    color: black;
+    
+}
+
+.signup-wrapper .login-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+    color: #060505;
+}
+
+.login-link p a {
+    color: rgb(244, 247, 184);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.login-link p a:hover {
+    /* text-decoration: underline; */
+    color:rgb(240, 247, 106);
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+    .signup-wrapper {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    .signup-wrapper h1 {
+        font-size: 24px;
+    }
+
+    .input-boxes input {
+        font-size: 14px;
+        padding: 15px 40px 15px 15px;
+    }
+
+    .signup-wrapper button {
+        font-size: 18px;
+        height: 40px;
+        transition:0.4s;
+    }
+}
+
+@media (max-width: 480px) {
+    .signup-wrapper {
+        width: 100%;
+        padding: 15px 10px;
+    }
+
+    .signup-wrapper h1 {
+        font-size: 20px;
+    }
+
+    .input-boxes input {
+        font-size: 12px;
+        padding: 10px 35px 10px 10px;
+    }
+
+    .signup-wrapper button {
+        font-size: 16px;
+        height: 35px;
+        transition:0.4s;
+    }
+}
